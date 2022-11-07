@@ -1,0 +1,21 @@
+{
+    "name": "gasnor-per-sc",
+    "version": "1.0.0",
+    "description": "Contratos para GASNOR PER",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Grupo Sabra",
+    "license": "ISC",
+    "dependencies": {
+        "@openzeppelin/contracts": "^2.4.0",
+        "solc": "0.5.11",
+        "truffle-assertions": "0.9.1",
+        "truffle-hdwallet-provider": "1.0.14",
+        "typechain": "0.3.21"
+    }
+}

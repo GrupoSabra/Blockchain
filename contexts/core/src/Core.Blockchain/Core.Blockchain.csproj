@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\smart-contracts\src\bin\**\*.bin">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\smart-contracts\src\bin\**\*.abi">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="contracts\EventLog.abi" />
+    <None Remove="contracts\EventLog.bin" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="contracts\EventLog.abi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contracts\EventLog.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Nethereum.JsonRpc.WebSocketClient" Version="3.5.0" />
+    <PackageReference Include="Sabra.Framework.Ethereum" Version="2.0.2" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shared\src\Configuration\Configuration.csproj" />
+    <ProjectReference Include="..\..\..\blockchain\src\Blockchain.Domain\Ethereum.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,61 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contexts", "contexts", "{6D19C089-F7A6-4A79-9D7B-14792A212FC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ethereum", "ethereum", "{DDCD8D29-4262-464A-A8B6-4E27765CBFA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ethereum.Domain", "contexts\blockchain\src\Blockchain.Domain\Ethereum.Domain.csproj", "{F9C65DD3-9317-40E3-AAA5-03789D93C708}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{290CB5B9-84AC-435C-B2A4-7CDD3E518362}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Blockchain", "contexts\core\src\Core.Blockchain\Core.Blockchain.csproj", "{484876DE-5B32-4584-9468-E5D546A461DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{304F5788-2F06-4811-8E2C-16B40FD014EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configuration", "shared\src\Configuration\Configuration.csproj", "{A60A3C46-EDDF-4F77-A3F3-479C8932CC90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{78F8D91C-4E87-4605-9319-1AB48BE096A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deploy", "contexts\demo\src\Deploy\Deploy.csproj", "{24DD3300-86A7-434D-A954-47D08CAD2348}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9C65DD3-9317-40E3-AAA5-03789D93C708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C65DD3-9317-40E3-AAA5-03789D93C708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C65DD3-9317-40E3-AAA5-03789D93C708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C65DD3-9317-40E3-AAA5-03789D93C708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484876DE-5B32-4584-9468-E5D546A461DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484876DE-5B32-4584-9468-E5D546A461DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484876DE-5B32-4584-9468-E5D546A461DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484876DE-5B32-4584-9468-E5D546A461DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60A3C46-EDDF-4F77-A3F3-479C8932CC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60A3C46-EDDF-4F77-A3F3-479C8932CC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60A3C46-EDDF-4F77-A3F3-479C8932CC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60A3C46-EDDF-4F77-A3F3-479C8932CC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DD3300-86A7-434D-A954-47D08CAD2348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DD3300-86A7-434D-A954-47D08CAD2348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DD3300-86A7-434D-A954-47D08CAD2348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DD3300-86A7-434D-A954-47D08CAD2348}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDCD8D29-4262-464A-A8B6-4E27765CBFA3} = {6D19C089-F7A6-4A79-9D7B-14792A212FC7}
+		{F9C65DD3-9317-40E3-AAA5-03789D93C708} = {DDCD8D29-4262-464A-A8B6-4E27765CBFA3}
+		{290CB5B9-84AC-435C-B2A4-7CDD3E518362} = {6D19C089-F7A6-4A79-9D7B-14792A212FC7}
+		{484876DE-5B32-4584-9468-E5D546A461DD} = {290CB5B9-84AC-435C-B2A4-7CDD3E518362}
+		{A60A3C46-EDDF-4F77-A3F3-479C8932CC90} = {304F5788-2F06-4811-8E2C-16B40FD014EF}
+		{78F8D91C-4E87-4605-9319-1AB48BE096A8} = {6D19C089-F7A6-4A79-9D7B-14792A212FC7}
+		{24DD3300-86A7-434D-A954-47D08CAD2348} = {78F8D91C-4E87-4605-9319-1AB48BE096A8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8C278A3-71D7-4B26-AE16-BD22521C2942}
+	EndGlobalSection
+EndGlobal

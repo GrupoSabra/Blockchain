@@ -1,0 +1,1 @@
+npx typechain --target legacy --outDir "../../http-services/bnsv-admin/src/Gasnor.PER.HttpService.AdminConsole/ClientApp/src/app/services/blockchain/contracts" "./bin/contracts/*.abi"
