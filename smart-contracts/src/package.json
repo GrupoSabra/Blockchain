@@ -1,0 +1,19 @@
+{
+    "name": "blockchain demo",
+    "version": "1.0.0",
+    "description": "Contratos para blockchain demo",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Grupo Sabra",
+    "license": "ISC",
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.8.0",
+        "solc": "0.5.11",
+        "typechain": "0.3.21"
+    }
+}
